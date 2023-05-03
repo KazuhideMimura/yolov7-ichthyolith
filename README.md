@@ -1,4 +1,8 @@
 # yolov7-slideObservation
+<p align="center">
+  <img src="images_for_github/yolo_slide.gif" width="1200"> 
+</p>
+
 
 ## Note
 - This repository contains source codes for `Mimura, K., Nakamura, K., Yasukawa, K., Sibert, E. C., Ohta, J., Kitazawa, T. and Kato, Y.; Applicability of Object Detection to Microfossil Research: Implications from Deep Learning Models to Detect Microfossil Fish Teeth and Denticles Using YOLO-v7 (to be submitted)`.
@@ -44,6 +48,26 @@ See folder [slide_images](/slide_images) for an example of detection image files
 **detecting images taken at one site continuously**
 
 `python continuous_detect.py --conf 0.288 --source slide_images/Site_1149 --img-size 640 --weights runs/train/v7x_20221226_3cls_02all_640/weights/best.pt --name v7x_20221226_3cls_02all_640 --nosave --save-txt --save-conf`
+
+### Detection example
+class **Tooth**:
+
+<p align="center">
+  <img src="images_for_github/Screenshot1_Teeth.png" width="1200"> 
+</p>
+
+class **Denticle**:
+
+<p align="center">
+  <img src="images_for_github/Screenshot2_Denticle.png" width="1200"> 
+</p>
+
+class **Saw-toothed**:
+
+<p align="center">
+  <img src="images_for_github/Screenshot3_Saw-toothed.png" width="1200"> 
+</p>
+
 
 ## Dataset
 Datasets for this project are available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
