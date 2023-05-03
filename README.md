@@ -8,7 +8,7 @@
 This repository is designed for the observation of glass slides using a microscope. The originality is the following.
 
 1. We enabled detection from multiple folders without re-loading of detection model by `continuous_detect.py`.
-2. When wide slide is divided into multiple images, some objects may appear in multiple (2-4) images, which leads to duplication in detection results. To reduce duplication, the function `***` writen in `***.py` checks duplication by calculating "Absolute coordinates." [More detail: KazuhideMimura/ai_ichthyolith](https://github.com/KazuhideMimura/ai_ichthyolith/).
+2. When wide slide is divided into multiple images, some objects may appear in multiple (2-4) images, which leads to duplication in detection results. To reduce duplication, the function `generate_csv` writen in [`utils/custom_functions.py`](/utils/custom_functions.py) checks duplication by calculating "Absolute coordinates." [More detail: KazuhideMimura/ai_ichthyolith](https://github.com/KazuhideMimura/ai_ichthyolith/).
 
 ## How to use?
 ### Training, validating and testing yolov7 models
@@ -33,7 +33,11 @@ Please follow explanations at [WongKinYiu/yolov7](https://github.com/WongKinYiu/
 
       ...
 ```
-See [slide_images](/slide_images) for an example of detection image files.
+See folder [slide_images](/slide_images) for an example of detection image files.
+
+
+### Detection
+
 
 ## Dataset
 Our dataset for this project is available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
