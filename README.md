@@ -37,13 +37,21 @@ See folder [slide_images](/slide_images) for an example of detection image files
 
 
 ### Detection
+**single folder for trial**
 
+`python detect.py --conf 0.288 --source inference/ichthyolith --img-size 640 --weights runs/train/v7x_20221226_3cls_02all_640/weights/best.pt`
+
+**detecting images taken at one site continuously**
+
+`python continuous_detect.py --conf 0.288 --source slide_images/Site_1149 --img-size 640 --weights runs/train/v7x_20221226_3cls_02all_640/weights/best.pt --name v7x_20221226_3cls_02all_640 --nosave --save-txt --save-conf`
 
 ## Dataset
-Our dataset for this project is available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
+Datasets for this project are available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
 
 ## Trained weights
 Trained weights are temporally shared on [Google Drive](https://drive.google.com/drive/folders/1oDLuxzNEAwJGiK4iP5mRY8a0TFYyc8hM?usp=share_link).
 
 ## Log
+2023.5.3 Version 1
+
 2023.5.2 Opened repository
