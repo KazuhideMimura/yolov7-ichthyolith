@@ -218,8 +218,6 @@ def detect(save_img=False):
                         site_name = site_name, class_names=names, crop_img = True, 
                         nms_iou = 0.25)
 
-            #TODO: chek previous value of nms_iou
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
