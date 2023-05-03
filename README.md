@@ -2,14 +2,12 @@
 
 ## Note
 - This repository contains source codes for `Mimura, K., Nakamura, K., Yasukawa, K., Sibert, E. C., Ohta, J., Kitazawa, T. and Kato, Y.; Applicability of Object Detection to Microfossil Research: Implications from Deep Learning Models to Detect Microfossil Fish Teeth and Denticles Using YOLO-v7 (to be submitted)`.
-- Most of the program files in this repository are cloned from [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
-.
-
+- Most of the program files in this repository are cloned from [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7).
 
 ## What is new?
 This repository is designed for the observation of glass slides using a microscope. The originality is the following.
 
-1. We enabled detection from multiple folders without re-loading of detection model by `detect***.py`.
+1. We enabled detection from multiple folders without re-loading of detection model by `continuous_detect.py`.
 2. When wide slide is divided into multiple images, some objects may appear in multiple (2-4) images, which leads to duplication in detection results. To reduce duplication, the function `***` writen in `***.py` checks duplication by calculating "Absolute coordinates." [More detail: KazuhideMimura/ai_ichthyolith](https://github.com/KazuhideMimura/ai_ichthyolith/).
 
 ## How to use?
@@ -18,9 +16,9 @@ Please follow explanations at [WongKinYiu/yolov7](https://github.com/WongKinYiu/
 
 ### hierarchy for managing images
 - Site: location of the core drilled. Any site name can be used as long as it does not contain special symbols and spaces. (e.g. `Site_1149`) 
-- Sample: Corresponding to sampling horizon. Any sample name can be used as long as it does not contain special symbols and spaces. (e.g. `1149B_03_01_121`)
-- Slide: Corresponding to one glass slide. Name of slide should be `sample name` + slide number (001, 002, ...), such as `1149B_03_01_121_001`.
-- Image: Corresponding to one image file taken from glass slide. Name of image file should be `slide name` + (Y and X coordinates concatenated by underbar) + file extention, such as `1149B_03_01_121_001_00960_14400.jpg`.
+- Sample: Corresponding to sampling horizon. Any sample name can be used as long as it does not contain special symbols and spaces. (e.g. `1149B_03_01_100`)
+- Slide: Corresponding to one glass slide. Name of slide should be `sample name` + slide number (001, 002, ...), such as `1149B_03_01_100_001`.
+- Image: Corresponding to one image file taken from glass slide. Name of image file should be `slide name` + (Y and X coordinates concatenated by underbar) + file extention, such as `1149B_03_01_100_001_960_14400.jpg`.
 
 ###  Directory for detection images
 ```
@@ -35,10 +33,13 @@ Please follow explanations at [WongKinYiu/yolov7](https://github.com/WongKinYiu/
 
       ...
 ```
+See [slide_images](/slide_images) for an example of detection image files.
 
 ## Dataset
 Our dataset for this project is available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
 
+## Trained weights
+Trained weights are temporally shared on [Google Drive](https://drive.google.com/drive/folders/1oDLuxzNEAwJGiK4iP5mRY8a0TFYyc8hM?usp=share_link).
 
 ## Log
 2023.5.2 Opened repository
