@@ -1,0 +1,15 @@
+# for training on ichthyolith dataset
+
+# download command/URL (optional)
+# download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./datasets/20221207/01_selected/train
+val: ./datasets/20221207/01_selected/val
+test: ./datasets/20221207/01_selected/test
+
+# number of classes
+nc: 2
+
+# class names
+names: ['tooth', 'denticle']
