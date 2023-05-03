@@ -90,6 +90,12 @@ def generate_csv(detect_sample_dir, img_sample_dir, site_name, class_names,
     df.to_csv(csv_path)
     print('saved: ', csv_path)
 
+
+"""
+Functions bellow are modified from matterport/Mask_RCNN/mrcnn/utils.py
+https://github.com/matterport/Mask_RCNN
+"""
+
 def non_max_suppression(df, nms_iou):
     slide_names = sorted(set(df['slide']))
     for s in sorted(slide_names):
