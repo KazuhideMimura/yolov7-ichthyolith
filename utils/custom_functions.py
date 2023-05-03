@@ -7,7 +7,6 @@ import cv2
 
 from utils.general import xywhn2xyxy, xywh2xyxy
 
-# todo: make it easy to export only images
 def generate_csv(detect_sample_dir, img_sample_dir, site_name, class_names, 
                  W = 1200, H = 1200, nms_iou = None, extention = '.jpg', crop_img = False, 
                  l_thresh = 0, l_factor = 0.93):
