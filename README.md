@@ -5,6 +5,7 @@
 - Most of the program files in this repository are cloned from [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 .
 
+
 ## What is new?
 This repository is designed for the observation of glass slides using a microscope. The originality is the following.
 
@@ -34,6 +35,10 @@ Please follow explanations at [WongKinYiu/yolov7](https://github.com/WongKinYiu/
 
       ...
 ```
+
+## Dataset
+Our dataset for this project is available on [Figshare](https://dx.doi.org/10.6084/m9.figshare.22736609).
+
 
 ## Log
 2023.5.2 Opened repository
