@@ -1,0 +1,1 @@
+best epoch: epoch_182.pt, best fitness: 0.78924
