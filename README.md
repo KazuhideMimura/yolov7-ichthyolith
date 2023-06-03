@@ -5,7 +5,9 @@
 
 
 ## Note
-- This repository contains source codes for `Mimura, K., Nakamura, K., Yasukawa, K., Sibert, E. C., Ohta, J., Kitazawa, T. and Kato, Y.; Applicability of Object Detection to Microfossil Research: Implications from Deep Learning Models to Detect Microfossil Fish Teeth and Denticles Using YOLO-v7 (to be submitted)`.
+- This repository contains source codes for the following paper.
+  
+   Mimura, K., Nakamura, K., Yasukawa, K., Sibert, E., Ohta, J., Kitazawa, T. and Kato, Y.: Applicability of Object Detection to Microfossil Research: Implications from Deep Learning Models to Detect Microfossil Fish Teeth and Denticles Using YOLO-v7. [ESS Open Archive](https://doi.org/10.22541/essoar.168500340.03413762/v1), 2023.
 - Most of the program files in this repository are cloned from [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7).
 
 ## What is new?
@@ -79,3 +81,5 @@ Trained weights are temporally shared on [Google Drive](https://drive.google.com
 2023.5.3 Version 1
 
 2023.5.2 Opened repository
+
+2023.5.25 Preprint is shared at [ESS Open Archive](https://doi.org/10.22541/essoar.168500340.03413762/v1),
