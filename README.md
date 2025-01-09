@@ -1,4 +1,6 @@
 # yolov7-slideObservation
+<a href="https://doi.org/10.5281/zenodo.14619204"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14619204.svg" alt="DOI"></a>
+
 <p align="center">
   <img src="images_for_github/yolo_slide.gif" width="1200"> 
 </p>
