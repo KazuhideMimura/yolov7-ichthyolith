@@ -5,6 +5,9 @@
   <img src="images_for_github/yolo_slide.gif" width="1200"> 
 </p>
 
+## Citation of this program
+Mimura, K. (2025) Yolov7-slideObservation (v1.0.0). *Zenodo*. https://doi.org/10.5281/zenodo.14619204
+
 
 ## Note
 - This repository contains source codes for the following paper. If you find this repository useful, please consider citing the following paper.
@@ -81,6 +84,10 @@ Datasets for this project are available on [Figshare](https://dx.doi.org/10.6084
 Trained weights are temporally shared on [Google Drive](https://drive.google.com/drive/folders/1oDLuxzNEAwJGiK4iP5mRY8a0TFYyc8hM?usp=share_link).
 
 ## Log
+2025.1.15 Published program codes in [Zenodo](https://doi.org/10.5281/zenodo.14619204)
+
+2024.1 The paper is accepted for publication in [Earth and Space Sciences](https://doi.org/10.1029/2023EA003122)
+
 2023.5.3 Version 1
 
 2023.5.2 Opened repository
